@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <style>
+      .backg {
+        background-color: #f2f2f2;
+        background-image: url("https://www.filepicker.io/api/file/INZsH6XtRIqQqxvYGP6Q");
+        background-repeat: repeat-x;
+        background-position: 50% 50%;
+        background-size: cover;
+        color: white;
+        padding: 20px;
+        height: 300px;
+        width: 500px;
+      }
+      input[type] {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      input[required] {
+        border-color: red;
+      }
+
+      input[type~="text"] {
+        width: 200px;
+      }
+
+      input[type|="email"] {
+        width: 250px;
+      }
+
+      input[type^="el"] {
+        width: 150px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[value*="mit"]:hover {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backg">
+      <h1>This is form using attribute selector</h1>
+      <p>the form has name,email and phone</p>
+    </div>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
